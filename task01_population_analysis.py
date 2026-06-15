@@ -70,7 +70,7 @@ plt.title('World Population Distribution - Top 20 Countries (2022)',
 plt.xticks(rotation=45, ha='right')
 plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
-plt.savefig('/home/claude/population_by_country.png', dpi=300, bbox_inches='tight')
+plt.savefig('population_by_country.png', dpi=300, bbox_inches='tight')
 print("\n✓ Saved: population_by_country.png")
 plt.close()
 
@@ -90,7 +90,7 @@ plt.title('Histogram: Distribution of Population Across Countries',
 plt.legend(fontsize=10)
 plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
-plt.savefig('/home/claude/population_histogram.png', dpi=300, bbox_inches='tight')
+plt.savefig('population_histogram.png', dpi=300, bbox_inches='tight')
 print("✓ Saved: population_histogram.png")
 plt.close()
 
@@ -114,7 +114,7 @@ for bar in bars:
              ha='center', va='bottom', fontsize=10, fontweight='bold')
 
 plt.tight_layout()
-plt.savefig('/home/claude/population_by_continent.png', dpi=300, bbox_inches='tight')
+plt.savefig('population_by_continent.png', dpi=300, bbox_inches='tight')
 print("✓ Saved: population_by_continent.png")
 plt.close()
 
@@ -138,13 +138,13 @@ for bar in bars:
              ha='center', va='bottom', fontsize=11, fontweight='bold')
 
 plt.tight_layout()
-plt.savefig('/home/claude/age_distribution.png', dpi=300, bbox_inches='tight')
+plt.savefig('age_distribution.png', dpi=300, bbox_inches='tight')
 print("✓ Saved: age_distribution.png")
 plt.close()
 
 # Save datasets to CSV
-df_countries.to_csv('/home/claude/population_data.csv', index=False)
-df_age.to_csv('/home/claude/age_distribution_data.csv', index=False)
+df_countries.to_csv('population_data.csv', index=False)
+df_age.to_csv('age_distribution_data.csv', index=False)
 
 print("\n" + "="*70)
 print("KEY INSIGHTS:")
